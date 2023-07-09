@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="author" content="Job">
+        <title>about-us</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./slideshow.js"></script>
+        <style>
+          *{
+    
+    margin: 0;
+    
+}
+
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #141a5079;
+    background-color: #30A9DE";
+
+}
+
+.logo{
+    
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 150px;
+}
+.nav-item a{
+    color: #30A9DE;
+    
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-brand{
+    text-shadow: #30A9DE;
+    font-weight:1000;
+}
+.header{
+    margin: 0%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#30A9DE;
+}
+
+
+#header-links{
+    align-items: flex-end;
+    list-style-type: none;/*removes the dots in the unordered list*/
+    display: flex;
+    margin:0;
+    padding:0;
+    gap:8px;
+    background-color:none;
+   
+}
+.p{
+    font-size: 22px;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    background-color:none;
+    font-family: 'firstfont';
+    
+
+}
+.p:hover{
+    color:#575ba3;/* color changes when the corser hovers over the link*/
+}
+#image-1{
+    height: auto;
+    width: 100%;
+    box-shadow:20px 20px 50px 15px #1a1d4e ;
+
+}
+.container{
+    position: relative;
+    text-align: center;
+    color:black;
+    background-color: skyblue;
+}
+.content{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    margin: 10px 10px;
+    background-color:rgba(135, 206, 235,0.03);/* used 0.03 to manage the opacity of the text back ground*/
+    font-size: 48px;
+    text-decoration: underline #1a1d4e;
+    font-family: 'firstfont';
+    font-weight: lighter;
+}
+.paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.p-1{
+    border: 5px solid black;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color:#a2ded0;
+    color:#1a1d4e;
+    box-shadow:20px 20px 50px 15px rgba(26, 29, 78,.8);
+   
+}
+.p-2{
+    border: 5px solid black;
+    width: 50%;
+    align-items: flex-end;
+    background-color: #a2ded0;
+    color: #1a1d4e;
+    margin-top: 30px;
+    padding: 20px;
+     box-shadow:20px 20px 50px 15px #1a1d4e;
+     margin-top: 60px;
+}
+
+textarea{
+    margin-top: 30px;
+}
+.foot{
+    background-color: #1a1d4e;
+    text-align: center;
+}
+#footer-links{
+    list-style-type: none;
+    
+}
+@font-face {
+    font-family: 'firstfont';
+    src: url(./fonts/Rye-Regular.ttf);
+}
+.title1{
+    font-family: 'firstfont','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    font-weight: lighter;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: #a2ded0;
+    text-align: center;
+}
+@font-face {
+    font-family:'contentfont';
+    src: url(./fonts/Gloock-Regular.ttf);
+}
+.note1{
+    background-color: #a2ded0;
+    font-family:'contentfont';
+    font-size: 16px;
+}
+.section{
+    background-color: #30A9DE;
+   
+}
+#about-us-page{
+    width: 100%;
+        padding: 70px 0;
+        background: linear-gradient(rgba(2, 0, 122, 0.096),#4ddada3b),url(TOURISTRESORT.images/sunsetimage2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200vh;
+  
+}
+
+ 
+  
+
+        </style>
+    </head>
+    
+    <body style="background-color: #30a9de;">
+        <!--NAVIGATION BAR-->
+<section id="nav-bar">
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">THE BLUE LAGOON RESORT<img src="TOURISTRESORT.images/logo3.png"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a href="./TOURIST RESORT.html" class="nav-link" aria-current="HOME" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="./about-us-page.html" class="nav-link active"  aria-current="ABOUT" href="#">ABOUT</a>
+              </li>
+             
+              <li class="nav-item">
+                <a href="./relax.html" class="nav-link" aria-current="SERVICES" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a href="./rooms and rates.html" class="nav-link" aria-current="ACCOMODATION" href="#">ACCOMODATION</a>
+              </li>
+              <li class="nav-item">
+                <a href="./TOURIST RESORT TESTIMONIALS.html" class="nav-link" aria-current="TESTIMONIALS" href="#">TESTIMONIALS</a>
+              </li>
+              <li class="nav-item">
+                <a href="./TOURIST RESORT BOOKING.html" class="nav-link " aria-current="BOOKINGS" href="#">BOOKINGS</a>
+              </li>
+              <li class="nav-item">
+                <a href="./gallery.html" class="nav-link" aria-current="RESORT GALLERY" href="#">RESORT GALLERY</a>
+              </li>
+             
+      </nav>
+
+
+</section>
+<section id="about-us-page">
+<img src="TOURISTRESORT.images/logo3.png" class="logo"/>
+     <div class="container">
+     <img id="image-1" src="./TOURISTRESORT.images/beach image 1.jpg" alt="beach sunset image" class="photo">
+     <h1 class="content">ABOUT US</h1>
+    </div>
+    
+    <div class="paragraph">
+    <div class="p-1">
+        <h1 class="title1">OUR STORY</h1>
+       <p class="note1"> The Blue Lagoon was founded by brilliant young men with a dream of owning a luxurious hotel resort at the beachfront.They envisioned a serene and picturesque location where guests could escape from the hustle and bustle for daily life and indulge in ultimate relaxation. After years of hard work and dedication,they finally made their dream a reality.</p>
+    </div>
+  
+    <div class="p-2">
+        <h1 class="title1">IMPACT TO THE<br> LOCAL COMMUNITY</h1>
+        <p class="note1"> The investment has also impacted the local community
+        by offering job opportunities to locals,
+         training them in hospitality and customer service
+        . As the hotel became more successful, they invested back into the community, 
+        supporting local businesses
+         helping to improve the infrastructure of the area
+        . The founders also started to offer tours of the surrounding villages, highlighting the unique culture and tradition of the area.</p>
+       
+    </div> 
+</div>
+
+<a class="btn btn-primary" href="./TOURIST RESORT.html" role="button">Back to homepage</a>
+
+</section>
+    </body>
+</html>

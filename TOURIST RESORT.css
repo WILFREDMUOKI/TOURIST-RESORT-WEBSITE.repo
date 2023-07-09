@@ -1,0 +1,671 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*----------NAVIGATION BAR--------*/
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #141a5079;
+    background-color: #30A9DE";
+
+}
+
+.logo{
+    
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 150px;
+
+
+}
+.footer-image img{
+    
+    width: 200px;
+    position: absolute;
+    top: 270%;
+    left: 45%;
+    height: 200px;
+    box-shadow: 0 10px 20px 3px #786699;
+
+
+}
+.testimonial-image img{
+    
+    width: 200px;
+    position: absolute;
+    top: 170%;
+    left: 45%;
+    height: 200px;
+    box-shadow: 0 10px 20px 3px #5d20c7;
+}
+.homepage-image img{
+    
+    width: 200px;
+    position: absolute;
+    top: 680%;
+    left: 45%;
+    height: 200px;
+    box-shadow: 0 10px 20px 3px #150038;
+
+
+}
+.nav-item a{
+    color: #30A9DE;
+    
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-brand{
+    text-shadow: #22617c;
+    font-weight:1000;
+}
+
+
+
+/*----HOMEPAGE----*/
+
+#HOMEPAGE{
+    background: linear-gradient(rgba(2, 0, 122, 0.397),#77dfff3b),url(TOURISTRESORT.images/hompage2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    box-shadow: 0 10px 20px 3px #43335e;
+
+}
+.homepage img{
+    width: 2000;
+    background-size:cover;
+    background-position:center;
+    height: 150vh;
+    size: 20;
+
+}
+.Homepage-text{
+    text-align: center;
+    color: #f1f1f1;
+    padding-top: 120px;
+
+}
+.Homepage-text h1{
+    font-size: 150px;
+    text-align: center;
+    text-shadow: #1A1D4E;
+    font-family: 'Lobster', cursive;
+    
+
+}
+.Homepage-text h2{
+    font-size: 100px;
+    text-align: center;
+    text-shadow: #1A1D4E;
+    font-family: 'Lobster', cursive;
+    
+}
+    
+.Homepage-text p{
+    font-size:20px ;
+    font-weight: lighter;
+    font-family: 'Kaushan Script', cursive;
+}
+.Homepage-text p:hover{
+    font-size:30px ;
+}
+
+
+
+/*--FEATURES--*/
+
+
+.col{
+    box-shadow: 0 10px 20px 3px #43335e;
+}
+#FEATURES{
+    box-shadow: 0 10px 20px 3px #43335e;
+}
+.card-title{
+    font-weight: bolder;
+}
+.card-text{
+    font-family: 'Sriracha', cursive;
+}
+
+
+
+
+
+/*--SLIDESHOW--*/
+
+.carousel-item{
+    width: 100px;
+    height: 800px;
+    box-shadow: 0 10px 20px 3px #43335e;
+    max-height: 720px;
+}
+#carousel{
+    box-shadow: 0 10px 20px 3px #43335e;
+
+}
+
+
+
+
+
+/*---TESTIMONIALS---*/
+
+
+
+
+#TESTIMONIAL{
+    width: 100%;
+    padding: 70px 0;
+    background: linear-gradient(rgba(2, 0, 122, 0.24),#4ddada3b),url(TOURISTRESORT.images/hiking.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200vh;
+    box-shadow: 0 10px 20px 3px #1A1D4E;
+
+}
+
+.TESTIMONIAL-title-text h1{
+    font-size: 50px;
+    color: #1A1D4E;
+    font-weight: bolder;
+}
+.TESTIMONIAL-title-text{
+    text-align: center;
+    padding-bottom: 70px;
+    
+   
+  
+}
+.TESTIMONIAL-title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #1A1D4E;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'Sriracha', cursive;
+}
+.TESTIMONIAL-title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#1A1D4E,#f1f1f1);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.TESTIMONIAL-title-text{
+    background: #30A9DE";
+}
+
+
+@media  screen and (max-width: 770px){
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p{
+        font-size: 12px;
+
+    }
+    hr{
+        margin: 5px auto;
+
+    }
+    .single-service:hover .service-desc{
+    bottom: 25% !important;
+      
+    }
+}
+
+
+.testimonial-row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #000000;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.testimonial-col p{
+    font-size: 14px;
+    color: #f1f1f1;
+    font-family: 'Sriracha', cursive;
+
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0; 
+}
+.user img{
+    width: 70px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user-info h4{
+    color: #f1f1f1;
+}
+.user-info small{
+    color: #30A9DE;
+    font-weight: bolder;
+}
+.testimonial-col:hover{
+    transform: translateY(-30px);
+}
+
+@media  screen and (max-width: 770px){
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--FOOTER--*/
+#FOOTER{
+    padding: 100px 0 20px;
+    background: #30A9DE";
+    
+}
+
+    
+.footer-title-text{
+    text-align: center;
+    padding-bottom: 70px;
+    
+}
+.footer-title-text h1{
+    color: #1A1D4E;
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+.footer-title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #1A1D4E;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    
+}
+.footer-title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#1A1D4E,#f1f1f1);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.footer-right{
+    text-align: right;
+    
+}
+.footer-row h1{
+    margin: 10px 0;
+    color: #e5f1c9;
+
+}
+.footer-row p{
+    line-height: 35px;
+    color: #e5f1c9;
+}
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 50%;
+    
+
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left h1{
+    color: #1A1D4E;
+    font-weight: bolder;
+}
+.contact-left p{
+    color: #1A1D4E;
+    margin-right: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #010220;
+    display: inline-block;
+    transition: tranform 0.5s;
+}
+.social-icons a:hover{
+    color: #010220;
+    transform: translateY(-5px);
+
+}
+.btn2{
+    margin: 70px auto 0;
+}
+.btn2 a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: .5px solid #000cad6b;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.btn2 a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #041a42;
+    z-index: -1;
+    transition: 0.5s;
+
+
+}
+.btn2 a:hover span{
+    width: 100%;
+}
+.btn2 a:hover{
+    color: rgb(248, 245, 245);
+}
+.contact-right form{
+    width: 100px;
+
+}
+#texboid{
+    height: 500px;
+    font-size: 14%;
+
+}
+form input,form textarea{
+    width: 500%;
+    border: 0;
+    outline: none;
+    background: #1A1D4E;
+    padding: 15px;
+    margin: 15px 10;
+    color: #ebecf3;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+.container{
+    margin: 0% 100%;
+}
+
+
+
+/*--BOOKING--*/
+#BOOKING{
+    padding: 100px 0 20px;
+    background: #30A9DE;
+        width: 100%;
+        padding: 70px 0;
+        background: linear-gradient(rgba(2, 0, 122, 0.096),#4ddada3b),url(TOURISTRESORT.images/rooms3.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300vh;
+        box-shadow: 0 10px 20px 3px #1A1D4E;
+    
+}
+
+    
+
+.booking-title-text{
+    text-align: center;
+    padding-bottom: 70px;
+    
+}
+.booking-title-text h1{
+    color: #1A1D4E;
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+.booking-title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #1A1D4E;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    
+}
+.booking-title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#1A1D4E,#f1f1f1);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.booking-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.booking-left,.booking-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.booking-right{
+    text-align: right;
+    
+}
+.booking-row h1{
+    margin: 10px 0;
+    color: #e5f1c9;
+
+}
+.booking-row p{
+    line-height: 35px;
+    color: #e5f1c9;
+}
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 50%;
+    
+
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left h1{
+    color: #1A1D4E;
+    font-weight: bolder;
+}
+.contact-left p{
+    color: #1A1D4E;
+    margin-right: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #010220;
+    display: inline-block;
+    transition: tranform 0.5s;
+}
+.social-icons a:hover{
+    color: #010220;
+    transform: translateY(-5px);
+
+}
+.btn2{
+    margin: 70px auto 0;
+}
+.btn2 a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: .5px solid #000cad6b;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.btn2 a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #041a42;
+    z-index: -1;
+    transition: 0.5s;
+
+
+}
+.btn2 a:hover span{
+    width: 100%;
+}
+.btn2 a:hover{
+    color: rgb(248, 245, 245);
+}
+.contact-right form{
+    width: 100px;
+    
+
+}
+#texboid{
+    height: 1000px;
+    font-size: 14%;
+    margin: 0% 10%;
+
+}
+form input,form textarea{
+    width: 600%;
+    border: 0;
+    outline: none;
+    background: #1A1D4E;
+    padding: 15px;
+    margin: 15px 10px;
+    color: #ebecf3;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.container{
+    margin: 0% 100%;
+}
+.room-type{
+    background: #1A1D4E;
+    
+    left: 300%;
+}
+.room-type p{
+    color: #f1f1f1;
+}
+
+
+/*-----RESORT GALLERY-----*/
+#RESORT-GALLERY{
+
+}
+.gallery img{
+    flex:auto;
+    width: 400px;
+    left: 45%;
+    flex-wrap: wrap;
+    box-shadow: 50px  20px 100px #1A1D4E;
+}

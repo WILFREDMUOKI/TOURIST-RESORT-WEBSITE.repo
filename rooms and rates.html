@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title>rooms and rates</title>
+        
+       
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Kaushan+Script&family=Lobster&family=Sriracha&display=swap" rel="stylesheet">
+<style>
+  *{
+  margin: 0;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+    background-color: #30A9DE";
+
+}
+
+.logo{
+    
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 150px;
+}
+.nav-item a{
+    color: #30A9DE;
+    
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-brand{
+    text-shadow: #30A9DE;
+    font-weight:1000;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.item1{
+    flex: 1;
+    padding: 8px;
+    margin-top: 50px;
+
+
+
+}
+.item2{
+    flex: 1;
+    font-size: 18px;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 30px;
+}
+
+
+.mySlides{
+  display: none;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color:rgba(0, 0, 0,.3);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.top {
+    vertical-align: middle;    
+    box-shadow:20px 20px 50px 15px rgba(26, 29, 78,.3) ;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    margin-right: 50px;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'roomfont';
+  font-weight: lighter;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.note1{
+    margin: 10px auto;
+    text-align: center;
+    width: 700px;
+    padding: 8px;
+}
+.note2{
+    text-align: center;
+    padding: 8px;
+    border: #1a1d4e solid 5px;
+    width: 700px;
+    margin: 10px auto;
+}
+.flex-container1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
+ .child1{
+     flex: 1;
+     margin-right: 20px;
+     margin-top: 50px;
+     padding: 8px;
+     
+ 
+ }
+ .image1{
+     margin-top: 50px;
+     flex: 1;
+     margin-right: 50px;
+     box-shadow:20px 20px 50px 15px burlywood ;
+     border-radius: 30px;
+     max-width: 500px;
+     max-height: 500px;
+ 
+ }
+ 
+ .flex-container2{
+     display: flex;
+     align-items: center;
+     gap: 8px;
+ }
+ .image2{
+     flex: 1;
+     margin-right: 20px;
+     max-width: 500px;
+     max-height: 500px;
+     margin-top: 50px;
+     margin-left: 50px;
+     border-radius: 30px;
+     box-shadow:20px 20px 50px 15px skyblue ;
+ 
+ }
+  .child2{
+     flex: 1;
+     font-size: 18px;
+     margin-top: 100px;
+     margin-left: 250px;
+     
+ }
+ .amenities{
+    width: 800px;
+    border: #1a1d4e solid 5px;
+    margin: 50px auto;
+    text-align: center;
+    
+    
+
+ }
+ .lists{
+     padding: 10px;
+    margin: 10px auto;
+     color: black;
+    list-style-type: none;
+    font-family:'roomfont' ;
+ }
+ .foot{
+    background-color: #1a1d4e;
+    text-align: center;
+    margin-top: 60px;
+}
+#footer-links{
+    list-style-type: none;
+}
+@font-face {
+  font-family: 'ryefont';
+  src: url(./fonts/Rye-Regular.ttf);
+}
+@font-face {
+  font-family: 'italianofont';
+  src: url(./fonts/Italianno-Regular.ttf);
+}
+@font-face {
+  font-family: 'roomfont';
+  src: url(./fonts/Gloock-Regular.ttf);
+}
+.title1{
+  font-family: 'ryefont','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: lighter;
+  margin: 0 auto;
+  padding: 8px;
+
+
+}
+.title2{
+  font-family: 'italianofont';
+  font-size: 35px;
+  margin-top: -20px;
+  margin: 0 auto;
+  padding: 8px;
+
+}
+.rooms{
+  font-family: 'roomfont';
+  font-size: 16px;
+  width: 80%;
+  padding: 8px;
+  
+
+}
+.pricing{
+  font-family: 'ryefont';
+
+}
+.book{
+  font-family: 'ryefont';
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #1a1d4e;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 15px;
+  align-self: flex-end;
+}
+.book:hover{
+  color:black;
+  background-color: #a2ded0;
+}
+.notes{
+  font-family: 'roomfont';
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+
+
+
+
+</style>
+    </head>
+    
+    <body style="background-color: #30A9DE;">
+        <!--NAVIGATION BAR-->
+        
+<section id="nav-bar">
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">THE BLUE LAGOON RESORT<img src="TOURISTRESORT.images/logo3.png"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a href="./TOURIST RESORT.html" class="nav-link" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="./about-us-page.html" class="nav-link" href="#">ABOUT</a>
+              </li>
+             
+              <li class="nav-item">
+                <a href="./relax.html" class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a href="./rooms and rates.html" class="nav-link active" href="#">ACCOMODATION</a>
+              </li>
+              <li class="nav-item">
+                <a href="./TOURIST RESORT TESTIMONIALS.html" class="nav-link" href="#">TESTIMONIALS</a>
+              </li>
+              <li class="nav-item">
+                <a href="./TOURIST RESORT BOOKING.html" class="nav-link" href="#">BOOKINGS</a>
+              </li>
+              <li class="nav-item">
+                <a href="./gallery.html" class="nav-link" href="#">RESORT GALLERY</a>
+              </li>
+             
+      </nav>
+
+
+</section>
+
+        <div class="flex-container">
+            <div class="item1">
+                <div class="slideshow-container">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 8</div>
+                      <img src="./TOURISTRESORT.images/family suite 1.webp" class="top" >
+                      <div class="text">family suite</div>
+                    </div>
+                
+        
+                    
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 8</div>
+                      <img src="./TOURISTRESORT.images/honey moon suite jacuzzi.jpg" class="top" >
+                      <div class="text">honey moon gateaway</div>
+                    </div>
+                    
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 8</div>
+                      <img src="./TOURISTRESORT.images/double room 1.jpg" class="top">
+                      <div class="text">double rooms</div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="./TOURISTRESORT.images/single room 1.jpg" class="top" >
+                        <div class="text">single rooms</div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="./TOURISTRESORT.images/tree house image.jpg" class="top" >
+                        <div class="text">tree house</div>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">6 / 8</div>
+                  <img src="./TOURISTRESORT.images/honey moon jacuzzi.jpg" class="top" >
+                  <div class="text">honey moon jacuzzi </div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="./TOURISTRESORT.images/evening chillspot.jpg" class="top" >
+            <div class="text">evening chillspot</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="./TOURISTRESORT.images/double-couple rooms.jpg" class="top" >
+      <div class="text">double-couple rooms</div>
+    </section>            
+            
+                  
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span>  
+ 
+             
+            
+            
+            </div>
+            </div>
+            </div>
+            <div class="item2">
+                <h1  class="title1">BLUE LAGOON</h1>
+                <h1  class="title2">ROOMS AND RATES</h1>
+                <p class="rooms">Blue Lagoon has a collection of spacious Rooms. These are all beautifully spaced out ensuring peace and privacy. Each room has a veranda and en suite bathroom with hot showers, towels and toiletries. Twin, double and triple rooms are available. Cots can be arranged for children at no extra cost. All rooms are air conditioned and beds have mosquito nets. There is a safe for valuables at reception, and laundry service available at a small extra cost.</p>
+            </div>
+        </div>
+        <hr>
+        <section>
+            <div class="note1">
+                <h1  class="title1">LIVE THE</h1>
+                <h1  class="title2">Beach life</h1>
+                <p class="notes">Blue Lagoons' spacious accommodation,
+                    has spectacular views and a choice of room sizes to meet all requirements. Whether you`re taking a break as a couple or on holiday with the whole family, there will be a perfect fit for you.  
+                    Our welcoming and friendly staff will make sure you're looked after so you have time to take a breath, relax, have fun and enjoy your stay.</p>
+            </div>
+            <div class="note2">
+                <h1  class="title1">WHAT'S BEEN <br> <span>SAID </span> </h1>
+                <P class="notes">'Recommended by friends the Blue Lagoon Resort did not disappoint. Warm , friendly service , a great cottage , fantastic views, ocean frontage, good food and all excellent value for money. Would return at the drop of a hat</P>
+            </div>
+            <div style="text-align: center;">
+                <h1  class="title1">THE</h1>
+                <h1  class="title2">ROOMS</h1>
+            </div>
+            <div class="flex-container1">
+                <div class="child1">
+                    <h1 class="title1"> BLUE LAGOON</h1>
+                    <h1 class="title2"> FAMILY SUITE</h1>
+                    <p class="rooms">Perfect for a family or a group of friends. If you'd like to be a little more independent our 4 Bed, 3 Bathroom self catering Beach House on the Blue Lagoon' property is situated right on the beach. You really do have the ocean at your feet! If you're up for soaking up some sunshine on the beach or kicking back in the Sitting Room with a good book and an amazing view, this would be perfect for you. You can still use all Blue Lagoon amenities, when you feel like being a bit more sociable!  </p>
+                    <p class="pricing">PRICING RATES:$250 per night</p>
+                    <button class="book">BOOK</button>
+                </div>
+                    <img src="./TOURISTRESORT.images/double room 1.jpg" alt=" CHEETAH IMAGE" class="image1">
+                </div>
+            </div>
+            <div class="flex-container2">
+                    <img src="./TOURISTRESORT.images/double room 3.1.jpg" alt="" class="image2">
+                    <div class="child2">
+                        <h1 class="title1">BLUE LAGOON</h1>
+                    <h1 class="title2">DOUBLE ROOM COMPLEX</h1>
+                    <p class="rooms"> Double Room complex with a double bed,one shared bathroom. This is ideal for a small family or a group of friends. up to 4 people. </p>
+                    <p class="pricing">PRICING RATES:$150 per night</p>
+                    <button class="book">BOOK</button>
+                </div>
+                </div>
+                <div class="flex-container1">
+                    <div class="child1">
+                        <h1 class="title1">BLUE LAGOON</h1>
+                        <h1 class="title2"> SINGLE ROOM</h1>
+                        <p class="rooms">Single Room comes with a double bed and one shared bathroom. This is ideal for a couple or an individual 0r two friends. up to 2 people. </p>
+                        <p class="pricing">PRICING RATES:$100 per night</p>
+                        <button class="book">BOOK</button>
+                    </div>
+                        <img src="./TOURISTRESORT.images/single hotel room 3.2.jpg" alt=" CHEETAH IMAGE" class="image1">
+                    </div>
+                </div>
+                <div class="flex-container2">
+                        <img src="./TOURISTRESORT.images/suite.jpg" alt="" class="image2">
+                        <div class="child2">
+                            <h1 class="title1">BLUE LAGOON</h1>
+                        <h1 class="title2">HONEY MOON SUITE</h1>
+                        <p class="rooms">For the lovers there is the Honey Moon Suite. It comes with a double bed, one en suite bathroom.Best deal for lovers who want to spend time in style.</p>
+                        <p class="pricing">PRICING RATES:$300 per night</p>
+                        <button class="book">BOOK</button>
+                    </div>
+                    </div>
+                    <div class="flex-container1">
+                        <div class="child1">
+                            <h1 class="title1">BLUE LAGOON</h1>
+                            <h1 class="title2"> TREE HOUSE SUITE</h1>
+                            <p class="rooms"> This is an open experience for adventure seekers.It comes with a double bed ,2 single beds, an en suite bathroom and one shared bathroom.Ideal for up to 4 people. </p>
+                            <p class="pricing">PRICING RATES:$200 per night</p>
+                            <button class="book">BOOK</button>
+                        </div>
+                        <img src="./TOURISTRESORT.images/tree house image.jpg" alt=" CHEETAH IMAGE" class="image1">
+                            </div>
+                        </div>
+                        <div class="amenities">
+                           <h1 class="title1"> AMENITIES</h1>
+                           <ul class="lists">
+                            <li>Air Conditioning</li>
+                            <li>Suite Bathroom</li>
+                            <li>Room Safe</li>
+                            <li>Laundry Service</li>
+                            <li>Towels & Toiletries</li>
+                            <li>Baby Cot Available</li>
+                            <li>Nanny Service Available</li>
+                            <li>Free 5G Wifi Connection</li>
+                           </ul>
+
+                        </div>
+                        <div class="note2">
+                            <h1 class="title1">SOME THINGS YOU<br> <span style="font-weight: lighter; font-size: smaller;">NEED TO KNOW</span> </h1>
+                            <P class="notes">We want to reassure our patrons that Blue Lagoon has followed all up to date COVID-19 regulations, including social distancing, increased hygiene, and regular temperature. We request that everyone wears a mask, as per government regulations.
+                                For more information on this please feel free to contact us and a member of our team would be happy to explain the current climate in our area.</P>
+                        </div>
+
+
+        </section>
+        <a class="btn btn-primary" href="./TOURIST RESORT.html" role="button">Back to homepage</a>
+      </div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </body>
+</html>
